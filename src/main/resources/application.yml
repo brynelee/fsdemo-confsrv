@@ -1,5 +1,6 @@
 server:
   port: 8889
+debug: false
 spring:
 #  profiles:
 #    active: native
@@ -12,7 +13,7 @@ spring:
 #        native:
 #          search-locations: classpath:/config/fsdemo-usercenter/
         git:
-          uri: https://xdpc.com:8443/r/fsdemo-configurations.git
+          uri: https://xdserver.com:8443/r/fsdemo-configurations.git
           skip-ssl-validation: true
           searchPaths: fsdemo-usercenter,fsdemo-tas,fsdemo-authsrv
           username: xiaodong
