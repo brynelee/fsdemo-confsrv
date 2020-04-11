@@ -1,0 +1,20 @@
+server:
+  port: 8889
+spring:
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+#        native:
+#          search-locations: classpath:/config/fsdemo-usercenter/
+        git:
+          uri: https://xdpc.com:8443/r/fsdemo-configurations.git
+          skip-ssl-validation: true
+          searchPaths: fsdemo-usercenter,fsdemo-tas,fsdemo-authsrv
+          username: xiaodong
+#          password: "{cipher}53616f4e82abef0af4a828112de2b00ef59d01078efa6eb36d6648f5764e7d9e"
+          password: time4fun
